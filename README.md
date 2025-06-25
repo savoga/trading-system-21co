@@ -20,7 +20,7 @@ It first fetches a full depth snapshot over HTTPS, then applies streamed updates
 
 I usually run it either from my Visual Studio Code console or in the terminal with the command:
 
-```clang++ -Iinclude/websocketpp -Iinclude/vcpkg/installed/arm64-osx/include -Linclude/vcpkg/installed/arm64-osx/lib -lssl -lcrypto -std=c++17 src/main.cpp -o main``` then ```./main```
+```clang++ -Iinclude/websocketpp -Iinclude/vcpkg/installed/arm64-osx/include -Linclude/vcpkg/installed/arm64-osx/lib -lssl -lcrypto src/Book.cpp src/BinanceWebSocket.cpp src/OrderBook.cpp src/OrderSimulation.cpp src/Order.cpp src/NetworkUtils.cpp -std=c++17 src/main.cpp -o main``` then ```./main```
 
 To insert orders, the user needs to use the terminal.
 
